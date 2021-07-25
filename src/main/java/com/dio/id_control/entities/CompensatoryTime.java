@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 
 import javax.persistence.Embeddable;
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 import lombok.*;
 
@@ -15,6 +16,7 @@ import lombok.*;
 @AllArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class CompensatoryTime {
 	
 	@EqualsAndHashCode
