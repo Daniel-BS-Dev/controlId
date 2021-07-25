@@ -1,10 +1,13 @@
 package com.dio.id_control.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import lombok.*;
 
-@Entity
-@Table(name = "working_day")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+@Builder
 public class WorkingDay {
 	
 	private Long id;

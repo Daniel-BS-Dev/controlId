@@ -1,5 +1,7 @@
 package com.dio.id_control.entities;
 
+import java.time.LocalDateTime;
+
 import lombok.*;
 
 @Getter
@@ -8,15 +10,10 @@ import lombok.*;
 @AllArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class Company {
-	
+public class Calendar {
+
 	private Long id;
 	private String description;
-	private String cnpj;
-	private String address;
-	private String district;
-	private String city;
-	private String state;
-	private String phone;
-
+	private LocalDateTime specialDate;
+	private DateType dateType;
 }
